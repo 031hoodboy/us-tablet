@@ -1,13 +1,14 @@
 import React from "react";
-import Splash from "./pages/Splash";
+import Main from "./pages/Main";
+import NotFound from "./pages/NotFound";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Splash />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route exact path="/" element={<Main />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
